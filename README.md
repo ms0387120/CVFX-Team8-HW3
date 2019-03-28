@@ -10,7 +10,8 @@
 
 ---
 ## Compare with other method
-
-
+### 1. Inpainting
+* 論文參考自這篇：[Globally and Locally Consistent Image Completion](http://iizuka.cs.tsukuba.ac.jp/projects/completion/data/completion_sig2017.pdf)
+![](https://imgur.com/2KywRji.png)
 
 ---
