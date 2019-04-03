@@ -8,6 +8,8 @@
 
 ### 1. layer1
 #### living room：
+![](https://imgur.com/EQCiuFc.png)
+
 #### bed room：
 ### 2. layer4
 #### living room：
