@@ -6,7 +6,7 @@
 
 ![](https://i.imgur.com/RORvol2.jpg)
 ![](https://i.imgur.com/pDR5LTE.jpg)
-![](https://i.imgur.com/KQVCj3b.jpg)
+![](https://i.imgur.com/QRGIA6F.jpg)
 ![](https://i.imgur.com/VN7MNnS.jpg)
 > It is impossible to generate grass in the sky and **the GAN know that**.
 
