@@ -36,6 +36,8 @@
 
 ### 2. layer4
 #### living room：
+![](https://imgur.com/yaoQO35.png)
+
 #### bed room：
 ![](https://imgur.com/6Wj5QfG.png)
 #### 觀察：
