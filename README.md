@@ -130,7 +130,7 @@ Network的架構可以分為兩部分
     - 優點
 
         - 任意照片皆可操作
-        - 
+        - 生成效果不算太差
 
     - 缺點
 
@@ -145,7 +145,7 @@ Network的架構可以分為兩部分
 
         - 修圖空間可以任意
         - 生成出來的圖，直觀上正常合理
-        - 效果完勝 GANPaint、Inpainting
+        - 效果完勝 GANPaint、Globally and Locally inpainting
         - 便利使用，不用刻意選取素材或手動填選操作動作
         - 任意照片皆可操作
 
