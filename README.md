@@ -1,6 +1,9 @@
 # CVFX-Team8-HW3-GAN-Dissection
 
 ## Generate images with GANPaint
+* GANPaint draws with object-level control using a deep network. Each brush activates a set of neurons in a GAN that has learned to draw scenes
+* 測試網址：[GANPaint](http://gandissect.res.ibm.com/ganpaint.html?project=churchoutdoor&layer=layer4)
+
 ![](https://i.imgur.com/RORvol2.jpg)
 ![](https://i.imgur.com/pDR5LTE.jpg)
 ![](https://i.imgur.com/KQVCj3b.jpg)
@@ -10,6 +13,7 @@
 ![](https://i.imgur.com/EBBkvIE.jpg)
 
 * 目前來看，除了 Remove bricks 主觀看起來效果不怎麼好，其餘的都補圖的還算正常跟合理
+
 
 ---
 ## Dissect any GAN model and analyze what you find
@@ -48,5 +52,71 @@ Network的架構可以分為兩部分
 ![](https://imgur.com/2KywRji.png)
 
 
+---
+### 2. Partial Convolution Layer for Padding and Image Inpainting
+* 以往使用深度學習進行圖像修復的任務，通常會採用CNN修補圖片後，看起來都有點不自然，比方說顏色差異或模糊，因為這種方式會將正常的 pixels 與空洞的 pixels 都視為同樣的方式去處理
+* 論文參考自
+
+    - [Partial Convolution based Padding](https://arxiv.org/pdf/1811.11718.pdf)
+            
+        - 利用 **partial convolution based padding**，可將 padding region 視為 holes，將 original input 視為 non-holes。具體來說，在卷積操作期間，基於 padding region 和 convolution sliding window area 之間的比例，在圖像邊界附近對卷積結果進行重新加權，使得此方法的效果比一般 zero padding 更佳，附圖提供實驗結果
+        - ![](https://i.imgur.com/sz2weYw.png)
+
+    - [Image Inpainting for Irregular Holes Using Partial Convolutions](https://arxiv.org/pdf/1804.07723.pdf)
+        
+        - 作用就是讓 CNN 在傳遞時有個 **Mask** （區分空洞與否）作輔助，就可知道此 pixel 是正常或不正常的話，就能進行更為精準的修改
+        - 提出一個自動傳導 mask 的機制，透過此機制讓**上述提出的PConv**可以讓下一層知道哪邊還需要進行修復
+        - 使用 U-Net 進行圖像修復，將 Conv 改為 PConv 可達到更好的準確度
+        - 以往的圖像修復往往都是處理長方形的缺口，而此篇是第一個展示**修復不規則缺口的圖像修復任務**
+        - 提出一個不規則 mask 的資料集，並且公開出來讓大家可以評估圖像修復任務
+
+* NVIDIA 有提供網站供線上 Demo [Image Inpainting](https://www.nvidia.com/research/inpainting/) 
+* 測試如下：
+![](https://i.imgur.com/dDalisY.jpg)
+
 
 ---
+## Conclusion
+
+* **GANPaint**
+
+    - 優點
+
+        - 修圖空間可以任意
+        - 天空、草地、圓頂等補圖/移除效果，主觀上都是合理正常
+        - 補圖時，如果元素選在不應該出現的地方，GAN會知道，且不會亂生成
+
+    - 缺點
+
+        - 需要選好元素、移除/增加的動作才可執行，不夠便利使用
+        - Remove Bricks 效果不好
+        - 只能從網站上給的圖片進行測試，不能用自己的照片
+
+* **Inpainting**
+
+    - 優點
+
+        -     
+
+    - 缺點
+
+        - 
+
+
+
+* **Partial Convolution Layer for Padding and Image Inpainting**
+
+    - 優點
+
+        - 修圖空間可以任意
+        - 生成出來的圖，直觀上正常合理
+        - 效果完勝 GANPaint、Inpainting
+        - 便利使用，不用刻意選取素材或手動填選操作動作
+        - 任意照片皆可操作
+
+    - 缺點
+
+        - ？？？
+        
+ 
+
