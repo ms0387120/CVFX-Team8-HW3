@@ -16,6 +16,7 @@
 
 ### 1. layer1
 #### living room：
+![](https://imgur.com/3OTnaOq.png)
 #### bed room：
 ![](https://imgur.com/EQCiuFc.png)
 #### 觀察：
