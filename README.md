@@ -10,12 +10,15 @@
 #### living room：
 #### bed room：
 ![](https://imgur.com/EQCiuFc.png)
+#### 觀察：
 ### 2. layer4
 #### living room：
 #### bed room：
+#### 觀察：
 ### 3. layer7
 #### living room：
 #### bed room：
+#### 觀察：
 
 ---
 ## Compare with other method
