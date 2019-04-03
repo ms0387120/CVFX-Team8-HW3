@@ -125,7 +125,7 @@ Network的架構可以分為兩部分
         - Remove Bricks 效果不好
         - 只能從網站上給的圖片進行測試，不能用自己的照片
 
-* **Inpainting**
+* **Globally and Locally Consistent Image Completion**
 
     - 優點
 
