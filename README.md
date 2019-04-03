@@ -5,9 +5,9 @@
 
 ---
 ## Dissect any GAN model and analyze what you find
-### layer1
-### layer4
-### layer7
+### 1. layer1
+### 2. layer4
+### 3. layer7
 
 ---
 ## Compare with other method
