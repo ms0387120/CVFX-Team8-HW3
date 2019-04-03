@@ -5,9 +5,16 @@
 
 ---
 ## Dissect any GAN model and analyze what you find
+
 ### 1. layer1
+#### living room：
+#### bed room：
 ### 2. layer4
+#### living room：
+#### bed room：
 ### 3. layer7
+#### living room：
+#### bed room：
 
 ---
 ## Compare with other method
