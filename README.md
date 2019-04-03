@@ -1,7 +1,15 @@
 # CVFX-Team8-HW3-GAN-Dissection
 
 ## Generate images with GANPaint
+![](https://i.imgur.com/RORvol2.jpg)
+![](https://i.imgur.com/pDR5LTE.jpg)
+![](https://i.imgur.com/KQVCj3b.jpg)
+![](https://i.imgur.com/VN7MNnS.jpg)
+> It is impossible to generate grass in the sky and **the GAN know that**.
 
+![](https://i.imgur.com/EBBkvIE.jpg)
+
+* 目前來看，除了 Remove bricks 主觀看起來效果不怎麼好，其餘的都補圖的還算正常跟合理
 
 ---
 ## Dissect any GAN model and analyze what you find
