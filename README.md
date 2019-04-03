@@ -69,7 +69,7 @@
 
 ---
 ## Compare with other method
-### 1. Inpainting
+### 1. Globally and Locally Consistent Image Completion
 * 論文參考自這篇：[Globally and Locally Consistent Image Completion](http://iizuka.cs.tsukuba.ac.jp/projects/completion/data/completion_sig2017.pdf)
 * 使用CNN來進行圖像修復，與patch-based方法(ex:PatchMatch)相比，nn-based 方法能生成出沒有在圖片其他地方生成過的圖像，能使填補的成果完整度更高，適用於結構強度高、精細的圖片修復：例如人臉。此篇使用CNN網絡作為基礎，設計兩部分網絡，一部分用於生成圖像，一部分用於鑑別生成圖像是否與原圖片一致。
 
