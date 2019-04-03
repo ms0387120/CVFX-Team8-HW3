@@ -27,6 +27,7 @@
 ### 3. layer7
 #### living room：
 #### bed room：
+![](https://imgur.com/G9R0RB6.png)
 #### 觀察：
 
 ---
